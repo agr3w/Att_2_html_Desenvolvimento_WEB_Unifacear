@@ -1,0 +1,290 @@
+<!-- 
+                                    **Atividade de HTML 2** 
+    | Professora: ROSANETE GRASSIANI DOS SANTOSOffline | 4° Semestre ADS | Desenvolvimento Web |
+    | Aluno: Weslley Luiz Kampa | Data: 21/08/2025
+    | Descrição: Criação de uma página HTML com formulário de inscrição para um evento fictício.
+    | Link do repositório:
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"> <!-- Códigos de caracteres para a língua portuguesa -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade da aplicação-->
+    <title>Biologia nos Aquários</title>
+
+    <!-- Estilos direto no "head" do HTML -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+            color: #23405c;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+            padding: 32px;
+        }
+
+        h1,
+        h2,
+        h4 {
+            text-align: center;
+        }
+
+        h1 {
+            color: #1565c0;
+            margin-bottom: 8px;
+        }
+
+        h4 {
+            color: #1976d2;
+            margin-top: 0;
+            margin-bottom: 18px;
+        }
+
+        img {
+            display: block;
+            margin: 24px auto 24px auto;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(21, 101, 192, 0.15);
+            max-width: 100%;
+            height: auto;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 24px;
+            margin-bottom: 24px;
+        }
+
+        table {
+            border: 2px solid #0288d1;
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 32px;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #0288d1;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #e1f5fe;
+        }
+
+        tr:nth-child(odd) td {
+            background-color: #ffffff;
+        }
+
+        #form_inscricao {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 420px;
+            background-color: #f5fafd;
+            padding: 28px 24px;
+            border-radius: 14px;
+            border: 1.5px solid #1565c0;
+            box-shadow: 0 2px 8px rgba(21, 101, 192, 0.07);
+        }
+
+        label {
+            margin-bottom: 6px;
+            font-weight: 500;
+            color: #1565c0;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select,
+        textarea {
+            margin-bottom: 16px;
+            padding: 8px 10px;
+            border: 1px solid #b3e5fc;
+            border-radius: 6px;
+            background: #b9e7fc;
+            font-size: 1rem;
+            transition: border 0.2s;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="number"]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #0288d1;
+            outline: none;
+        }
+
+        input[type="radio"] {
+            margin-right: 6px;
+        }
+
+        .radio label {
+            margin-right: 18px;
+            font-weight: 400;
+            color: #102d47;
+        }
+
+        #label_interesse {
+            margin-top: 18px;
+        }
+
+        #label_obs {
+            margin-top: 18px;
+        }
+
+        button[type="submit"] {
+            background: linear-gradient(90deg, #0288d1 60%, #26c6da 100%);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 0;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            box-shadow: 0 2px 8px rgba(2, 136, 209, 0.12);
+            transition: background 0.2s;
+        }
+
+        button[type="submit"]:hover {
+            background: linear-gradient(90deg, #1565c0 60%, #00bcd4 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Conteúdo principal da página, para o caso de termos diversas "Sections" -->
+    <main>
+        <!-- Chamada para o evento -->
+        <h1>Biologia nos Aquários</h1>
+        <h4>Descubra como os seres marinhos vivem e se comportam em aquários e no ambiente natural!</h4>
+        <p>
+            Este evento reúne especialistas para discutir a biologia dos organismos marinhos em aquários, suas
+            adaptações,
+            desafios e as principais diferenças em relação ao ambiente livre. Venha aprender, participar de atividades
+            para ampliar seu conhecimento sobre a vida marinha!
+        </p>
+
+        <!-- Imagem demosntrativa do evento -->
+        <img src="https://th.bing.com/th/id/R.4644532b4a2fe88c40934a6082da8a43?rik=45fYElso6qtUyg&riu=http%3a%2f%2friotur.rio%2fwp-content%2fuploads%2f2016%2f10%2fAquaRio_v02-scaled.jpg&ehk=Zx%2bo4nJdTBYDCbCwvdEJy%2fLK4J0b4haL49MCP9eXw8M%3d&risl=&pid=ImgRaw&r=0"
+            alt="Aquário com vida marinha" width="400">
+
+        <!-- Listagem de atividades do evento -->
+        <h2>Atividades do Evento</h2>
+        <ul>
+            <li>Palestra: Adaptação dos peixes em aquários</li>
+            <li>Workshop: Montando um aquário saudável</li>
+            <li>Dinâmica: Diferenças de comportamento em aquários e no mar</li>
+            <li>Visita guiada: Observação de espécies marinhas</li>
+        </ul>
+
+        <!-- Tabela dos horários -->
+        <h2>Tabela de Horários</h2>
+        <table>
+            <tr>
+                <th>Horário</th>
+                <th>Atividade</th>
+            </tr>
+            <tr>
+                <td>09:00</td>
+                <td>Palestra: Adaptação dos peixes em aquários</td>
+            </tr>
+            <tr>
+                <td>10:30</td>
+                <td>Workshop: Montando um aquário saudável</td>
+            </tr>
+            <tr>
+                <td>13:00</td>
+                <td>Dinâmica: Diferenças de comportamento em aquários e no mar</td>
+            </tr>
+            <tr>
+                <td>15:00</td>
+                <td>Visita guiada: Observação de espécies marinhas</td>
+            </tr>
+        </table>
+
+        <!-- Sessão do formulário de inscrição -->
+        <section id="form_inscricao">
+            <h2>Formulário de Inscrição</h2>
+            <form action="@" method="post"> <!-- Método "post" para esconder itens enviados pela URL -->
+
+                <!-- Inputs do tipo "texto", "email" e "number" para o cadastro no evento do usuario-->
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="email@dominio.com" required>
+
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" min="0" placeholder="0" required>
+
+                <!-- Inputs do tipo "disco" para seleção de gênero -->
+                <label>Gênero:</label>
+                <div class="radio">
+                    <input type="radio" id="masculino" name="genero" value="Masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="feminino" name="genero" value="Feminino">
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" id="outro" name="genero" value="Outro">
+                    <label for="outro">Outro</label>
+                </div>
+
+                <!-- Select com opções de áreas de interesse do usuário no evento -->
+                <label for="interesse" id="label_interesse">Área de Interesse:</label>
+                <select id="interesse" name="interesse">
+                    <option value="biologia">Biologia</option>
+                    <option value="oceanografia">Oceanografia</option>
+                    <option value="veterinaria">Veterinária</option>
+                    <option value="educacao">Educação</option>
+                    <option value="outros">Outros</option>
+                </select>
+
+                <!-- Inputs do tipo "disco" para seleção de interesse em certificado -->
+                <label>Deseja certificado?</label>
+                <div class="radio">
+                    <input type="radio" id="cert_sim" name="certificado" value="Sim">
+                    <label for="cert_sim">Sim</label>
+                    <input type="radio" id="cert_nao" name="certificado" value="Não">
+                    <label for="cert_nao">Não</label>
+                </div>
+
+                <!-- Campo de "textarea" para observações -->
+                <label for="obs" id="label_obs">Observações:</label>
+                <textarea id="obs" name="obs" rows="4" cols="40" placeholder="Alguma observação?"></textarea>
+
+                <!-- Submit do formulário -->
+                <button type="submit">Enviar Inscrição</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+<!-- Obrigado pela leitura do código, adoro trabalhar com Front-End, fico no aguardo do feadback :D -->
+
+</html>
