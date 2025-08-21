@@ -26,22 +26,22 @@ O projeto foi desenvolvido como parte da disciplina de Desenvolvimento Web, mini
 
 - `index.html`: Página principal do evento, contendo todo o conteúdo e o formulário estilizado com CSS interno.
 
-## Como visualizar
+## Como visualizar o código
 
 1. Baixe ou clone o repositório:
    ```
    git clone https://github.com/agr3w/Att_2_html_Desenvolvimento_WEB_Unifacear
    ```
-2. Abra o arquivo `index.html` em seu navegador.
+2. Para visualizar a página abra o arquivo `index.html` em seu navegador.
+
+## Página na Web
+
+[Link para a página na web](https://agr3w.github.io/Att_2_html_Desenvolvimento_WEB_Unifacear/)
 
 ## Autor
 
 - **Aluno:** Weslley Luiz Kampa
 - **Data:** 21/08/2025
-
-## Repositório
-
-[Link para a página na web](***)
 
 ---
 *Desenvolvimento Web - Unifacear*
